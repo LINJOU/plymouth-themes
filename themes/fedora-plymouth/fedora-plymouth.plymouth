@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=fedora-plymouth
+Description=Fedora Plymouth theme by - Roman Voynich
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/fedora-plymouth
+ScriptFile=/usr/share/plymouth/themes/fedora-plymouth/fedora-plymouth.script
