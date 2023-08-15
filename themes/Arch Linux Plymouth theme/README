@@ -1,0 +1,29 @@
+This is a simple Plymouth theme displaying the Arch Linux logo.
+
+Created with GIMP, both PNGs and the GIF sample. Sorry for the crappy quality of the second one, but I don't know how to do it properly.
+
+[=============== Installation ===============]
+1. Move the extracted 'arch-glow' directory to plymouth themes directory:
+   # mv arch-glow /usr/share/plymouth/themes/
+
+2. Set correct ownership to the 'arch-glow' theme files:
+   # chown -R root.root /usr/share/plymouth/themes/arch-glow
+
+3. Set the 'arch-glow' theme as default, editing the following file *
+   # nano -w /etc/plymouth/plymouthd.conf
+   ----------------------------------------------------------------
+   [Daemon]
+   Theme=arch-glow
+   ShowDelay=5
+
+4. Reboot the kernel image (you have to repeat this step every time a theme is changed):
+   # mkinitcpio -p <name of your kernel preset; e.g. linux>
+
+   [Optional]
+   You can also do the two previous steps at once:
+   # plymouth-set-default-theme -R arch-glow
+
+5. Reboot to apply the changes.
+
+* Note: As of version 0.9.0 Plymouth has a new configuration file:
+        /etc/plymouth/plymouthd.conf

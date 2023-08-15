@@ -4,16 +4,21 @@ some plymouth themes
 
 + fedora-plymouth
     fork: https://www.gnome-look.org/p/2035462
-+ vinyl
-    fork: https://www.gnome-look.org/p/1000036
++ Arch Linux Plymouth theme
+    fork: https://www.gnome-look.org/p/1000032
 
 ## Installation
 
 ### install plymouth
 
-```shell
-sudo dnf install -y plymouth
-```
++ fedora
+    ```shell
+    sudo dnf install -y plymouth
+    ```
++ archlinux
+    ```shell
+    sudo pacman -S plymouth
+    ```
 
 ### update grub2
 
